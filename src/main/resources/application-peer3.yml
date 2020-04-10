@@ -13,7 +13,7 @@ eureka:
     hostname: peer3
     instance-id: earthshaker-30003
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@peer1:30001/eureka,http://${spring.security.user.name}:${spring.security.user.password}@peer2:30002/eureka
 
 logging.level.root: info
