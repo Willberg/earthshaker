@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: earthshaker
+  security:
+    user:
+      name: root
+      password: 123456
+
+server.port: 30001
+
+eureka:
+  instance:
+    hostname: peer1
+    instance-id: earthshaker-30001
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@peer2:30002/eureka,http://${spring.security.user.name}:${spring.security.user.password}@peer3:30003/eureka
+
+logging.level.root: info
