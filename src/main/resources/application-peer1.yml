@@ -1,11 +1,3 @@
-spring:
-  application:
-    name: earthshaker
-  security:
-    user:
-      name: root
-      password: 123456
-
 server.port: 30001
 
 eureka:

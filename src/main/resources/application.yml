@@ -8,3 +8,11 @@
 #eureka.server.enable-self-preservation=false
 
 spring.profiles.active: peer1
+
+spring:
+  application:
+    name: earthshaker
+  security:
+    user:
+      name: root
+      password: 123456
